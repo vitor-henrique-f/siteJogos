@@ -2,8 +2,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
+}
+
+#blackHole {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+header {
+    background: linear-gradient(to right, black, rgb(0, 0, 75));
+    height: 150px;
+    display: flex;
+    border-bottom: 0.5px solid rgba(164, 85, 255);
+    box-shadow:
+    0 0 5px rgba(164, 85, 255, 0.5),
+    0 0 10px rgba(164, 85, 255, 0.486),
+    0 0 20px rgba(164, 85, 255, 0.445),
+    0 0 40px rgba(164, 85, 255, 0.479);
+}
+
+footer {
+    background: linear-gradient(to left, black, rgb(0, 0, 75));
+    height: 150px;
+    display: flex;
+    border-top: 0.5px solid rgba(164, 85, 255);
+    box-shadow:
+    0 0 5px rgba(164, 85, 255, 0.5),
+    0 0 10px rgba(164, 85, 255, 0.486),
+    0 0 20px rgba(164, 85, 255, 0.445),
+    0 0 40px rgba(164, 85, 255, 0.479);
+    transform: translateY(37.5rem);
+}
+
+#tFooter {
+   color: rgba(255, 255, 255, 0.473);
+   font-family: Arial, Helvetica, sans-serif;
+   transform: translateY(32.1rem);
+   padding-left: 28.5rem;
+   font-size: 1.6rem;
 }
 
 #Coniungantur {
-    background-color: aqua;
+    width: 550px;
+    height: 720px;
+    transform: translateX(32rem);
+    align-self: center;
+}
+
+#Github {
+    width: 50px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.459);
+    position: relative;
+    left: 43.5rem;
+    top: 3.1rem;
+}
+
+#Tiktok {
+    width: 50px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.459);
+    position: relative;
+    left: 45rem;
+    top: 3.1rem;
+}
+
+#Github:hover, #Tiktok:hover{
+    color: white;
+    transition: 1s;
 }
