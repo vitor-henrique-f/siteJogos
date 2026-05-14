@@ -34,13 +34,13 @@ footer {
     0 0 10px rgba(164, 85, 255, 0.486),
     0 0 20px rgba(164, 85, 255, 0.445),
     0 0 40px rgba(164, 85, 255, 0.479);
-    transform: translateY(37.5rem);
+    transform: translateY(10rem);
 }
 
 #tFooter {
    color: rgba(255, 255, 255, 0.473);
    font-family: Arial, Helvetica, sans-serif;
-   transform: translateY(32.1rem);
+   transform: translateY(4.8rem);
    padding-left: 28.5rem;
    font-size: 1.6rem;
 }
@@ -73,4 +73,68 @@ footer {
 #Github:hover, #Tiktok:hover{
     color: white;
     transition: 1s;
+}
+
+.Jogos {
+    width: 600px;
+    height: 400px;
+
+    position: relative;
+    top: 3.7rem;
+    left: 31.5rem;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 10px rgba(164, 85, 255, 0.747);
+}
+
+.slides{
+    display:flex;
+    width:100%;
+    height:100%;
+
+    transition: transform 0.6s ease;
+}
+
+.slide{
+    min-width:100%;
+    height:100%;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+#lArrow, #rArrow{
+    background:none;
+    border:none;
+    outline:none;
+    color: rgba(255, 255, 255, 0.411);
+    cursor: pointer;
+}
+
+#lArrow:hover, #rArrow:hover{
+    color: white;
+    transition: 1s;
+}
+
+#lArrow {
+    position: relative;
+    top: 17.5rem;
+    left: 23rem;
+}
+
+#rArrow {
+    position: relative;
+    top: 17.5rem;
+    left: 73rem;
+}
+
+#arrow {
+    width: 35px;
+    height: 35px;
 }
