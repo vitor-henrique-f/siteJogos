@@ -12,6 +12,7 @@
     object-fit: cover;
     z-index: -1;
 }
+
 header {
     background: linear-gradient(to right, black, rgb(0, 0, 75));
     height: 150px;
@@ -137,4 +138,8 @@ footer {
 #arrow {
     width: 35px;
     height: 35px;
+}
+
+@media (max-width) {
+    
 }

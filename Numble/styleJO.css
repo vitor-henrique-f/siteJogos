@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+header {
+    height: 80px;
+    background: linear-gradient(to right, rgb(0, 56, 0), rgb(0, 97, 0));
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.61);
+}
+
+a {
+    text-decoration: none;
+}
+
+#tHeader {
+    font-size: 1.9rem;
+    color: rgb(42, 196, 42);
+    font-family: "Silkscreen";
+    position: relative;
+    bottom: 2.4rem;
+    padding-left: 10rem;
+}
+
+.menu {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+  position: relative;
+  padding-left: 38rem;
+  bottom: 4.2rem;
+}
+
+#mInicio, #mComoJogar, #mSobre, #mRanking {
+  color: black;
+  font-size: 19px;
+  font-family: "Silkscreen";
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+#mInicio::after, 
+#mComoJogar::after, 
+#mSobre::after, 
+#mRanking::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0%;
+  height: 3px;
+  background: green;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+#mInicio:hover,
+#mComoJogar:hover,
+#mSobre:hover,
+#mRanking:hover {
+  color: white;
+}
+
+#mInicio:hover::after,
+#mComoJogar:hover::after,
+#mSobre:hover::after,
+#mRanking:hover::after {
+  width: 100%;
+}
+
+#mInicio {
+  color: rgb(42, 196, 42);
+}
+
+#mInicio::after {
+  width: 100%;
+}
+
+#brain {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 0.8rem;
+    left: 3.5rem;
+    animation: pulse 5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 2px rgb(0, 255, 0));
+    }
+
+    50% {
+        transform: scale(1.15);
+        filter: drop-shadow(0 0 5px rgb(166, 255, 0));
+    }
+}
+
+footer {
+    height: 80px;
+    background: linear-gradient(to left, rgb(0, 56, 0), rgb(0, 97, 0));
+    position: relative;
+    top: 38rem;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.61);
+}
+
+#tFooter {
+    font-size: 1.1rem;
+    padding-top: 1.8rem;
+    padding-left: 25rem;
+    font-family: "Silkscreen";
+    color: rgba(42, 196, 42, 0.479);
+}
+
+#Pixels {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
