@@ -13,6 +13,10 @@
     z-index: -1;
 }
 
+body {
+    overflow: hidden;
+}
+
 header {
     background: linear-gradient(to right, black, rgb(0, 0, 75));
     height: 150px;
@@ -35,13 +39,14 @@ footer {
     0 0 10px rgba(164, 85, 255, 0.486),
     0 0 20px rgba(164, 85, 255, 0.445),
     0 0 40px rgba(164, 85, 255, 0.479);
-    transform: translateY(10rem);
+    position: relative;
+    bottom: 15rem;
 }
 
 #tFooter {
    color: rgba(255, 255, 255, 0.473);
    font-family: Arial, Helvetica, sans-serif;
-   transform: translateY(4.8rem);
+   padding-top: 4.2rem;
    padding-left: 28.5rem;
    font-size: 1.6rem;
 }
@@ -79,15 +84,11 @@ footer {
 .Jogos {
     width: 600px;
     height: 400px;
-
     position: relative;
     top: 3.7rem;
-    left: 31.5rem;
-
+    left: 13rem;
     border-radius: 15px;
-
     overflow: hidden;
-
     box-shadow: 0 0 10px rgba(164, 85, 255, 0.747);
 }
 
@@ -138,8 +139,17 @@ footer {
 #arrow {
     width: 35px;
     height: 35px;
+    position: relative;
+    right: 18.7rem;
 }
 
-@media (max-width) {
-    
+.box {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to left, black, rgb(0, 0, 75));
+    position: relative;
+    bottom: 21.29rem;
+    left: 67rem;
+    border-radius: 20px;
+    border: 2px solid white
 }
