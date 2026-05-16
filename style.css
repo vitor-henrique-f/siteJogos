@@ -103,6 +103,43 @@ footer {
 .slide{
     min-width:100%;
     height:100%;
+    position: relative;
+}
+
+#pSG, #pSN, #pSJ, #pSP {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    0 40px 120px rgb(0, 0, 0),
+    0 40px 120px rgb(0, 0, 0),
+    0 40px 120px rgb(0, 0, 0),
+    0 40px 120px rgb(0, 0, 0),
+    0 40px 120px rgb(0, 0, 0),
+    0 40px 120px rgb(0, 0, 0),
+    0 40px 120px rgb(0, 0, 0),
+    0 40px 120px rgb(0, 0, 0);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 9.4rem;
+    left: 9rem;
+}
+
+#pSN {
+    left: 7.5rem;
+}
+
+#pSG {
+    left: 8.5rem;
+}
+
+#pSJ {
+    left: 10rem;
+}
+
+#pSP {
+    left: 13rem;
 }
 
 .slide img{
@@ -151,5 +188,52 @@ footer {
     bottom: 21.29rem;
     left: 67rem;
     border-radius: 20px;
-    border: 2px solid white
+    box-shadow:
+    0 0 10px rgba(164, 85, 255, 0.5),
+    0 0 20px rgba(164, 85, 255, 0.486),
+    0 0 20px rgba(164, 85, 255, 0.445),
+    0 0 40px rgba(164, 85, 255, 0.479);
+    border: 2px solid purple;
+}
+
+#pB {
+    color: rgba(255, 255, 255, 0.849);
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.3rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 2.5rem
+}
+
+#tB {
+    color: rgb(185, 111, 255);
+    font-style: oblique;
+    text-shadow: 0 0 7px purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    position: relative;
+    top: 1.4rem;
+    left: 3rem;
+}
+
+#tB::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -12px;
+
+    width: 65px;
+    height: 4px;
+
+    border-radius: 10px;
+
+    background: #c84cff;
+
+    box-shadow: 0 0 4px #c84cff;
 }
